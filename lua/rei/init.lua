@@ -1,7 +1,9 @@
 local M = {}
 
+M.defaults = {}
+
 M.setup = function(opts)
-  return
+  opts = opts or M.defaults
 end
 
 return M
