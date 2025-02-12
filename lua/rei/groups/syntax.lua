@@ -1,4 +1,4 @@
-local rei = require("rei.init")
+local config = require("rei.config")
 local p = require("rei.palette")
 
 local styles = vim.tbl_map(function(value)
@@ -7,7 +7,7 @@ local styles = vim.tbl_map(function(value)
       return vim.tbl_extend("force", a, b)
     end,
   })
-end, rei.styles)
+end, config.styles)
 
 return {
   Comment = { fg = p.subtext3 } + styles.comments,

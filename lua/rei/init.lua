@@ -1,5 +1,4 @@
 local M = {}
-local config = require("rei.config")
 
 M.colorscheme = function()
   vim.cmd("hi clear")
@@ -10,17 +9,9 @@ M.colorscheme = function()
   vim.o.background = "dark"
   vim.o.termguicolors = true
   vim.g.colorsname = "rei"
+  require("rei.highlights").setup()
 end
 
-M.setup = function(opts)
-  opts = opts or config.defaults
-
-  for k, v in pairs(opts) do
-    if k == "integrations" then
-      for int, en in pairs(v) do
-      end
-    end
-  end
-end
+M.setup = require("rei.config").setup
 
 return M

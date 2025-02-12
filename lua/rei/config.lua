@@ -10,8 +10,14 @@ M.defaults = {
     variables = {},
     booleans = {}
   },
-  integrations = {},
+  integrations = {
+    indent_blankline = true,
+  },
   highlight_overrides = {}
 }
 
-return M
+M.setup = function(opts)
+  opts = opts or M.defaults
+end
+
+return setmetatable(M, { __index = M.defaults })
