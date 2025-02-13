@@ -25,7 +25,7 @@ return {
   LineNrAbove      = { fg = p.grey4 } ,
   LineNrBelow      = { fg = p.grey4 } ,
 	CursorLineNr     = { fg = p.subtext1 },
-	MatchParen       = { fg = p.cyan, underline = true },
+	MatchParen       = { fg = p.orange, underline = true },
 	ModeMsg          = { fg = p.grey3, bold = true },
 	MoreMsg          = { fg = p.bright_purple },
 	NonText          = { fg = p.subtext4 },

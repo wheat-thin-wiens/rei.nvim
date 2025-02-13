@@ -1,10 +1,12 @@
 [colors]
-foreground = 
-background = 
-cursor_bg = 
-cursor_border = 
-cursor_fg = 
-selection_bg = 
-selection_fg = 
-ansi = ["#36455A", "#A87692", "#808BA1", "#FD9491", "#566E90", "#B9AEE6", "#9DBCD0", "#DAD0E9"]
-brights = ["#465467", "#AF819B", "#8A94A8", "#FD9C9A", "#637999", "#BFB4E8", "#A5C1D4", "#DDD4EB"]
+foreground = "#CDCDCD"
+background = "#0E1723"
+cursor_bg = "#DAD0E9"
+cursor_border = "#DAD0E9"
+cursor_fg = "#0E1723"
+selection_bg = "#20262E"
+selection_fg = "#DAD0E9"
+scrollbar_thumb = "#404A56"
+split = "#404A56"
+ansi = ["#556173", "#A87692", "#809FA1", "#FD9491", "#91B8E9", "#B9AEE6", "#9DBCD0", "#DAD0E9"]
+brights = ["#626D7E", "#AF819B", "#8AA7A8", "#FD9C9A", "#A2C3EC", "#BFB4E8", "#A5C1D4", "#DDD4EB"]
