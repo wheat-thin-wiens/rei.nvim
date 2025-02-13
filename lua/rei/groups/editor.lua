@@ -1,4 +1,4 @@
-local p = require("rei.palette")
+local p = require("rei.palette").defaults
 
 return {
 	ColorColumn      = { bg = p.grey1 },
@@ -22,6 +22,8 @@ return {
 	IncSearch        = { fg = p.black, bg = p.cyan },
 	CurSearch        = { fg = p.black, bg = p.cyan },
 	LineNr           = { fg = p.grey4 },
+  LineNrAbove      = { fg = p.grey4 } ,
+  LineNrBelow      = { fg = p.grey4 } ,
 	CursorLineNr     = { fg = p.subtext1 },
 	MatchParen       = { fg = p.cyan, underline = true },
 	ModeMsg          = { fg = p.grey3, bold = true },

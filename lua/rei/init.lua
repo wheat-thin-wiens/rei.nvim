@@ -15,8 +15,6 @@ M.colorscheme = function()
   require("rei.highlights").setup()
 end
 
-M.setup = function(opts)
-  opts = opts or config.defaults
-end
+M.setup = config.setup
 
 return M

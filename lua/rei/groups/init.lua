@@ -1,12 +1,21 @@
 local M = {}
 
+--- @class base
+--- @field hl_group table<string, table>
+
+--- @class plugins
+--- @field hl_group table<string, table<string, table>>
+
 M.base = {
-  editor = require("rei.groups.editor"),
-  syntax = require("rei.groups.syntax")
+  require("rei.groups.editor"),
+  require("rei.groups.syntax")
 }
 
 M.plugins = {
-  lsp = require("rei.groups.lsp")
+  gitsigns = require("rei.groups.gitsigns"),
+  indent_blankline = require("rei.groups.indent_blankline"),
+  lsp = require("rei.groups.lsp"),
+  neotree = require("rei.groups.neotree"),
 }
 
 return M

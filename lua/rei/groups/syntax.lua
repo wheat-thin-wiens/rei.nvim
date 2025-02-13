@@ -1,5 +1,5 @@
-local config = require("rei.config")
-local p = require("rei.palette")
+local config = require("rei.config").settings
+local p = require("rei.palette").defaults
 
 local styles = vim.tbl_map(function(value)
   return setmetatable(value, {
@@ -41,7 +41,7 @@ return {
   SpecialComment = { fg = p.subtext4 },
   Debug          = { fg = p.cyan },
   Underlined     = { underline = true },
-  Error          = { fg = p.orange },
+  Error          = { fg = p.bright_red },
   Todo           = { fg = p.cyan },
 
   htmlArg = { fg = p.fg, italic = true },
