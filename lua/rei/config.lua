@@ -1,5 +1,11 @@
 local M = {}
 
+--- @class settings
+--- @field styles table
+--- @field integrations table
+--- @field terminal_colors boolean
+--- @field highlight_overrides table
+
 M.settings = {
   styles = {
     comments = {},
@@ -19,6 +25,8 @@ M.settings = {
   highlight_overrides = {}
 }
 
+--- Takes user config and saves it in settings
+--- @param opts settings
 M.setup = function(opts)
   opts = opts or M.settings
 

@@ -1,5 +1,8 @@
 local M = {}
 
+--- @class highlights
+--- @field groups table<string, table>
+
 local settings = require("rei.config").settings
 local terminal = require("rei.terminal")
 
@@ -8,6 +11,7 @@ local plugins = require("rei.groups.init").plugins
 
 local loaded_ints = {}
 
+--- Sets highlight groups according to user specification
 --- @param highlights table
 M.set_highlights = function(highlights)
   for name, hl in pairs(highlights) do

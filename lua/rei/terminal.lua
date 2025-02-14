@@ -1,7 +1,8 @@
 local M = {}
 
-local p = require("rei.palette")
+local p = require("rei.palette").defaults
 
+--- Specifies colors to be used in terminal
 M.setup = function()
   vim.g.terminal_background = p.bg
   vim.g.terminal_foreground = p.fg
