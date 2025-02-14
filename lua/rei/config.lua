@@ -20,6 +20,7 @@ M.settings = {
     indent_blankline = true,
     lsp = true,
     neotree = true,
+    render_markdown = true,
   },
   terminal_colors = true,
   highlight_overrides = {}
