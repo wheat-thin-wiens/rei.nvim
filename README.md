@@ -29,7 +29,14 @@ opts = {
     booleans = {},
     loops = {}
   },
-  integrations = {},
+  integrations = {
+    gitsigns = true,
+    indent_blankline = true,
+    lsp = true,
+    neotree = true,
+    render_markdown = true,
+    treesitter = true
+  },
   terminal_colors = true,
   highlight_overrides = {}
 }
@@ -44,6 +51,7 @@ opts = {
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ...with plans for more.
 
