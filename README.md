@@ -25,7 +25,9 @@ opts = {
     keywords = {},
     identifiers = {},
     functions = {},
-    booleans = {}
+    variables = {},
+    booleans = {},
+    loops = {}
   },
   integrations = {},
   terminal_colors = true,
@@ -37,11 +39,11 @@ opts = {
 
 `rei.nvim` currently has support for the follow plugins:
 
-- [Git Signs]()
-- [Indent Blankline]()
-- [NeoVim LSP]()
-- [Neotree]()
-- [Render Markdown]()
+- [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
+- [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
+- [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 
 ...with plans for more.
 

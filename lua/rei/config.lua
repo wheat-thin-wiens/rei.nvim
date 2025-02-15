@@ -12,8 +12,9 @@ M.settings = {
     keywords = {},
     identifiers = {},
     functions = {},
-    variables = {},
-    booleans = {}
+    booleans = {},
+    loops = {},
+    variables = {}
   },
   integrations = {
     gitsigns = true,
@@ -21,6 +22,7 @@ M.settings = {
     lsp = true,
     neotree = true,
     render_markdown = true,
+    treesitter = true
   },
   terminal_colors = true,
   highlight_overrides = {}
@@ -39,7 +41,8 @@ M.setup = function(opts)
     elseif k == "styles" then
       for style, setting in pairs(v) do
         if M.settings.styles[style] ~= nil then
-          M.settings.styles[style] = vim.tbl_deep_extend("keep", M.settings.styles[style], setting)
+          -- M.settings.styles[style] = vim.tbl_deep_extend("keep", M.settings.styles[style], setting)
+          M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
         end
       end
     else

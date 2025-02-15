@@ -16,7 +16,8 @@ M.plugins = {
   indent_blankline = require("rei.groups.indent_blankline"),
   lsp = require("rei.groups.lsp"),
   neotree = require("rei.groups.neotree"),
-  render_markdown = require("rei.groups.render_markdown")
+  render_markdown = require("rei.groups.render_markdown"),
+  treesitter = require("rei.groups.treesitter")
 }
 
 return M
