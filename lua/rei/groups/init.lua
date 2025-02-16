@@ -17,7 +17,8 @@ M.plugins = {
   lsp = require("rei.groups.lsp"),
   neotree = require("rei.groups.neotree"),
   render_markdown = require("rei.groups.render_markdown"),
-  treesitter = require("rei.groups.treesitter")
+  treesitter = require("rei.groups.treesitter"),
+  which_key = require("rei.groups.which_key"),
 }
 
 return M

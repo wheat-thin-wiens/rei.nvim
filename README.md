@@ -35,7 +35,8 @@ opts = {
     lsp = true,
     neotree = true,
     render_markdown = true,
-    treesitter = true
+    treesitter = true,
+    which_key = true
   },
   terminal_colors = true,
   highlight_overrides = {}
@@ -48,10 +49,12 @@ opts = {
 
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [which-key]()
 
 ...with plans for more.
 
@@ -64,3 +67,8 @@ Included you will also find themes for the following programs:
 
 - Starship
 - WezTerm
+
+# Special Thanks
+
+- [oldworld.nvim]()
+- [catppuccin]()

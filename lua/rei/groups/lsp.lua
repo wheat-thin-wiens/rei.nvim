@@ -15,7 +15,7 @@ return {
     ["@lsp.type.namespace"]                    = { link = "@namespace" },
     ["@lsp.type.number"]                       = { link = "@number" },
     ["@lsp.type.operator"]                     = { link = "@operator" },
-    ["@lsp.type.parameter"]                    = { link = "@parameter" },
+    ["@lsp.type.parameter"]                    = { link = "@variables.parameter" },
     ["@lsp.type.property"]                     = { link = "@property" },
     ["@lsp.type.selfKeyword"]                  = { link = "@variable.builtin" },
     ["@lsp.type.string.rust"]                  = { link = "@string" },

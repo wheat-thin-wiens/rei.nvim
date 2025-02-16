@@ -22,7 +22,8 @@ M.settings = {
     lsp = true,
     neotree = true,
     render_markdown = true,
-    treesitter = true
+    treesitter = true,
+    which_key = true,
   },
   terminal_colors = true,
   highlight_overrides = {}
@@ -46,7 +47,7 @@ M.setup = function(opts)
         end
       end
     else
-      M.setting[k] = v
+      M.k = v
     end
   end
 end

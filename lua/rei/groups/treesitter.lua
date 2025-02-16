@@ -11,11 +11,11 @@ end, config.styles)
 
 return {
   -- Identifiers
-  ["@variable"] = { fg = p.fg } + styles.variables,
-  ["@variable.builtin"] = { fg = p.purple } + styles.variables,
-  ["@variable.parameter"] = { fg = p.parameter } + styles.variables,
+  ["@variable"]           = { fg = p.fg } + styles.variables,
+  ["@variable.builtin"]   = { fg = p.purple } + styles.variables,
+  ["@variable.parameter"] = { fg = p.bright_red } + styles.variables,
 
-  ["@constant"] = { link = "Constant" },
+  ["@constant"]         = { link = "Constant" },
   ["@constant.builtin"] = { fg = p.yellow },
 
   ["@module"] = { fg = p.purple },
@@ -42,7 +42,7 @@ return {
   ["@type.builtin"] = { fg = p.yellow },
   ["@type.definition"] = { link = "Type" },
 
-  ["@attribute"] = { link = "Type" },
+  ["@attribute"] = { fg = p.orange },
   ["@property"] = { fg = p.purple },
 
   -- Functions
@@ -53,7 +53,7 @@ return {
   ["@function.method"] = { link = "Function" },
   ["@function.method.call"] = { link = "Function" },
 
-  ["@constructor"] = { fg = p.subtext3 },
+  ["@constructor"] = { fg = p.bright_blue },
   ["@constructor.javascript"] = { fg = p.red },
 
   -- Keywords
@@ -70,7 +70,6 @@ return {
   -- Comments
   ["@comment"] = { link = "Comment" },
   ["@comment.documentation"] = { link = "Comment" },
-
 
   ["@namespace"] = { fg = p.red, italic = true },
   ["@parameter"] = { fg = p.fg },

@@ -37,6 +37,10 @@ M.setup = function()
   if settings.terminal_colors then
     terminal.setup()
   end
+
+  for _, group in ipairs(settings.highlight_overrides) do
+    M.set_highlights(group)
+  end
 end
 
 return M
