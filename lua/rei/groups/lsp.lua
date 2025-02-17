@@ -2,9 +2,14 @@ local p = require("rei.palette").defaults
 
 return {
     -- LSP Semantic Token Groups
-    ["@lsp.type.boolean"]                      = { link = "@boolean" },
-    ["@lsp.type.builtinType"]                  = { link = "@type.builtin" },
     ["@lsp.type.comment"]                      = { link = "@comment" },
+    ["@lsp.type.boolean"]                      = { link = "@boolean" },
+    ["@lsp.type.number"]                       = { link = "@number" },
+    ["@lsp.type.operator"]                     = { link = "@operator" },
+    ["@lsp.type.parameter"]                    = { link = "@variables.parameter" },
+    ["@lsp.type.property"]                     = { link = "@property" },
+
+    ["@lsp.type.builtinType"]                  = { link = "@type.builtin" },
     ["@lsp.type.enum"]                         = { link = "@type" },
     ["@lsp.type.enumMember"]                   = { link = "@constant" },
     ["@lsp.type.escapeSequence"]               = { link = "@string.escape" },
@@ -13,10 +18,6 @@ return {
     ["@lsp.type.macro"]                        = { fg = p.magenta },
     ["@lsp.type.keyword"]                      = { link = "@keyword" },
     ["@lsp.type.namespace"]                    = { link = "@namespace" },
-    ["@lsp.type.number"]                       = { link = "@number" },
-    ["@lsp.type.operator"]                     = { link = "@operator" },
-    ["@lsp.type.parameter"]                    = { link = "@variables.parameter" },
-    ["@lsp.type.property"]                     = { link = "@property" },
     ["@lsp.type.selfKeyword"]                  = { link = "@variable.builtin" },
     ["@lsp.type.string.rust"]                  = { link = "@string" },
     ["@lsp.type.typeAlias"]                    = { link = "@type.definition" },

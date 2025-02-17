@@ -42,12 +42,12 @@ M.setup = function(opts)
     elseif k == "styles" then
       for style, setting in pairs(v) do
         if M.settings.styles[style] ~= nil then
-          -- M.settings.styles[style] = vim.tbl_deep_extend("keep", M.settings.styles[style], setting)
-          M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
+          M.settings.styles[style] = vim.tbl_deep_extend("keep", M.settings.styles[style], setting)
+          -- M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
         end
       end
     else
-      M.k = v
+      M.settings[k] = v
     end
   end
 end

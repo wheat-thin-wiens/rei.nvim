@@ -47,7 +47,7 @@ return {
 
   -- Functions
   ["@function"] = { link = "Function" },
-  ["@function.builtin"] = { fg = p.yellow } + styles.functions,
+  ["@function.builtin"] = { fg = p.bright_black } + styles.functions,
   ["@function.call"] = { link = "Function" },
 
   ["@function.method"] = { link = "Function" },

@@ -3,7 +3,7 @@ local M = {}
 --- @class highlights
 --- @field groups table<string, table>
 
-local settings = require("rei.config").settings
+local config = require("rei.config")
 local terminal = require("rei.terminal")
 
 local base = require("rei.groups.init").base
@@ -24,7 +24,7 @@ M.setup = function()
     M.set_highlights(group)
   end
 
-  for plugin, enabled in pairs(settings.integrations) do
+  for plugin, enabled in pairs(config.integrations) do
     if enabled then
       table.insert(loaded_ints, plugin)
     end
@@ -34,12 +34,12 @@ M.setup = function()
     M.set_highlights(plugins[plugin])
   end
 
-  if settings.terminal_colors then
-    terminal.setup()
+  for group, setting in pairs(config.highlight_overrides) do
+    vim.api.nvim_set_hl(0, group, setting)
   end
 
-  for _, group in ipairs(settings.highlight_overrides) do
-    M.set_highlights(group)
+  if config.terminal_colors then
+    terminal.setup()
   end
 end
 
