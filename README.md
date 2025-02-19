@@ -2,7 +2,7 @@
 
 Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
 
-![screenshot](./assets/screenshot.png)
+![screenshot](/assets/screenshot.png)
 
 # Install
 
