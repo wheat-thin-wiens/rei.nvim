@@ -2,7 +2,7 @@
 
 Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
 
-![screenshot]('.assets/screenshot.png')
+![screenshot](/assets/screenshot.png)
 
 # Install
 
@@ -21,13 +21,13 @@ return {
 ```lua
 opts = {
   styles = {
-    comments = {},
+    comments = { italic = 'true' },
     keywords = {},
     identifiers = {},
-    functions = {},
+    functions = { italic = 'true', bold = true },
     variables = {},
     booleans = {},
-    loops = {}
+    loops = { italic = true }
   },
   integrations = {
     gitsigns = true,
@@ -54,7 +54,7 @@ opts = {
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [which-key]()
+- [which-key](https://github.com/folke/which-key.nvim)
 
 ...with plans for more.
 
@@ -70,5 +70,6 @@ Included you will also find themes for the following programs:
 
 # Special Thanks
 
-- [oldworld.nvim]()
-- [catppuccin]()
+- [oldworld.nvim](https://github.com/dgox16/oldworld.nvim)
+- [catppuccin](https://github.com/catppuccin/nvim)
+
