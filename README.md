@@ -16,6 +16,21 @@ return {
 }
 ```
 
+or, to set the colorscheme from the config:
+
+```lua
+return {
+    "wheat-thin-wiens/rei.nvim",
+    priority = 1000,
+    config = function()
+      require("rei.nvim").setup({
+        -- opts go here
+      })
+      vim.cmd.colorscheme("rei")
+    end
+}
+```
+
 # Configuration
 
 ```lua
