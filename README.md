@@ -1,6 +1,6 @@
 <h1 align="center">
+    <img src="assets/logo.png" width="100">
     rei.nvim
-    <img src="assets/logo.png">
 </h1>
 
 <p align="center">
