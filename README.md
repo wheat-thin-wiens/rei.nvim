@@ -1,4 +1,4 @@
-# <center>`rei.nvim`</center>
+<h1 align="center">`rei.nvim`</h1>
 
 Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
 
