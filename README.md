@@ -1,8 +1,14 @@
-# `rei.nvim`
+<h2 align="center">
+    <img src="assets/logo.png" width="200"><br>
+    rei.nvim
+</h2><br>
 
-Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
+<p align="center">
+    Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
+</p>
 
-![screenshot](/assets/screenshot.png)
+
+![](/assets/screenshot1.png)
 
 # Install
 
