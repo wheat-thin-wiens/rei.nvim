@@ -1,7 +1,8 @@
 local p = require("rei.palette").defaults
 
 return {
-  GitSignsAdd    = { fg = p.green },
-  GitSignsChange = { fg = p.yellow },
-  GitSignsDelete = { fg = p.red }
+  SignColumn = { fg = "None", bg = "None" },
+  GitSignsAdd    = { fg = p.green, bg = "None" },
+  GitSignsChange = { fg = p.yellow, bg = "None" },
+  GitSignsDelete = { fg = p.red, bg = "None" }
 }

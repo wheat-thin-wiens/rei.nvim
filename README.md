@@ -1,7 +1,7 @@
-<h1 align="center">
+<h2 align="center">
     <img src="assets/logo.png" width="200"><br>
     rei.nvim
-</h1>
+</h2><br>
 
 <p align="center">
     Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
@@ -9,8 +9,6 @@
 
 
 ![](/assets/screenshot1.png)
-![](/assets/screenshot2.png)
-![](/assets/screenshot3.png)
 
 # Install
 
