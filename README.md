@@ -41,10 +41,10 @@ return {
 ```lua
 opts = {
   styles = {
-    comments = { italic = 'true' },
+    comments = { italic = true },
     keywords = {},
     identifiers = {},
-    functions = { italic = 'true', bold = true },
+    functions = { italic = true, bold = true },
     variables = {},
     booleans = {},
     loops = { italic = true }
