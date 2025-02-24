@@ -5,10 +5,9 @@
 
 <p align="center">
     Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
-</p>
+</p><br>
 
-
-![](/assets/screenshot1.png)
+![screenshot](/assets/screenshot1.png)
 
 # Install
 
@@ -56,6 +55,7 @@ opts = {
     lsp = true,
     neotree = true,
     render_markdown = true,
+    telescope = true, -- 'borderless' theme also available, leave as true for default theme
     treesitter = true,
     which_key = true
   },
@@ -74,6 +74,7 @@ opts = {
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [which-key](https://github.com/folke/which-key.nvim)
 
