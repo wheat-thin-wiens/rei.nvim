@@ -37,7 +37,8 @@ M.borderless =  {
 
   TelescopeResultsNormal = { bg = p.bg },
   TelescopeResultsBorder = { fg = p.bg, bg = p.bg },
-  TelescopeResultsTitle = { fg = p.bg },
+  TelescopeResultsTitle = { fg = p.green, bg = p.dark_green },
+  -- TelescopeResultsTitle = { fg = p.bg },
 }
 
 return M
