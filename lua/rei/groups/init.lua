@@ -1,5 +1,7 @@
 local M = {}
 
+P = require("rei.palette").defaults
+
 local settings = require("rei.config").settings
 
 --- @class base

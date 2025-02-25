@@ -1,6 +1,4 @@
-local p = require("rei.palette").defaults
-
 return {
-  IblIndent = { fg = p.grey0 },
-  IblScope  = { fg = p.grey4 }
+  IblIndent = { fg = P.grey0 },
+  IblScope  = { fg = P.grey4 }
 }
