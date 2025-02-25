@@ -1,0 +1,28 @@
+# rei theme for ghostty
+## name: rei
+
+background = #0E1723
+foreground = #CDCDCD
+selection-background = #2F3843
+selection-foreground = #CDCDCD
+cursor-color = #DAD0E9
+
+# normal
+palette = 0=#556173
+palette = 1=#A87692
+palette = 2=#809FA1
+palette = 3=#FD9491
+palette = 4=#91B8E9
+palette = 5=#B9AEE6
+palette = 6=#FCD0A1
+palette = 7=#9DBCD0
+
+# bright
+palette = 8=#404A56
+palette = 9=#D9B0C0
+palette = 10=#8AA7A8
+palette = 11=#FDB3B2
+palette = 12=#B4CFF0
+palette = 13=#BFB4E8
+palette = 14=#FCD4A8
+palette = 15=#A5C1D4

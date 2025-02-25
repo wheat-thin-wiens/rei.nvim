@@ -22,6 +22,7 @@ M.settings = {
     lsp = true,
     neotree = true,
     render_markdown = true,
+    telescope = true,
     treesitter = true,
     which_key = true,
   },
