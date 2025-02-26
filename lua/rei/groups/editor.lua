@@ -1,3 +1,11 @@
+local function transparency_enabled()
+  if Settings.transparency then
+    return "None"
+  else
+    return false
+  end
+end
+
 return {
 	ColorColumn      = { bg = P.grey1 },
 	Conceal          = { fg = P.grey1 },
@@ -27,9 +35,9 @@ return {
 	ModeMsg          = { fg = P.grey3, bold = true },
 	MoreMsg          = { fg = P.bright_Purple },
 	NonText          = { fg = P.subtext4 },
-	Normal           = { fg = P.fg, bg = P.bg },
-	NormalNC         = { fg = P.fg, bg = P.bg_dark },
-	NormalFloat      = { fg = P.fg, bg = P.bg_dark },
+	Normal           = { fg = P.fg, bg = transparency_enabled() or P.bg },
+	NormalNC         = { fg = P.fg, bg = transparency_enabled() or P.bg_dark },
+	NormalFloat      = { fg = P.fg, bg = transparency_enabled() or P.bg_dark },
 	FloatBorder      = { fg = P.grey3, bg = P.bg },
 	Pmenu            = { fg = P.fg, bg = P.black },
 	PmenuSel         = { fg = P.white, bg = P.grey3 },

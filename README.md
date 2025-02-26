@@ -60,22 +60,9 @@ opts = {
     treesitter = true,
     which_key = true
   },
+  transparency = false, -- Enables / Disables background transparency
   terminal_colors = true,
   highlight_overrides = {}
-}
-```
-
-## Transparent Background
-
-You can add the following snippet to your config if you'd like a transparent background:
-
-```lua
-opts = {
-  highlight_overrides = {
-    Normal = { bg = "None" },
-    NormalNC = { bg = "None" },
-    NormalFloat = { bg = "None" }
-  }
 }
 ```
 

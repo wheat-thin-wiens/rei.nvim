@@ -27,6 +27,7 @@ M.settings = {
     treesitter = true,
     which_key = true,
   },
+  transparency = false,
   terminal_colors = true,
   highlight_overrides = {}
 }
