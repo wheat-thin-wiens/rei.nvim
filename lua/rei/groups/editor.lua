@@ -55,7 +55,7 @@ return {
 	Italic           = { fg = P.blue, italic = true },
 	Visual           = { bg = P.grey4 },
 	VisualNOS        = { bg = P.grey4 },
-	WarningMsg       = { fg = P.cyan },
+	WarningMsg       = { fg = P.yellow },
 	WildMenu         = { fg = P.black, bg = P.purple },
 	Winbar           = { fg = P.fg, bg = P.grey1 },
 	WinbarNC         = { fg = P.subtext4, bg = P.bg_dark },

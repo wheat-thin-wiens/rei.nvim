@@ -20,6 +20,7 @@ M.settings = {
     gitsigns = true,
     indent_blankline = true,
     lsp = true,
+    mason = true,
     neotree = true,
     render_markdown = true,
     telescope = true,
