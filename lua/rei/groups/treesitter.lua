@@ -75,8 +75,8 @@ return {
 
   ["@punctuation"]            = { fg = P.subtext1 },
   ["@punctuation.delimiter"]  = { fg = P.subtext1 },
-  ["@punctuation.bracket"]    = { fg = P.subtext3 },
-  ["@punctuation.special"]    = { fg = P.subtext1 },
+  ["@punctuation.bracket"]    = { fg = P.bright_red },
+  ["@punctuation.special"]    = { fg = P.bright_green },
 
   ["@symbol"]                 = { fg = P.yellow },
   ["@tag"]                    = { fg = P.red },
@@ -108,7 +108,7 @@ return {
   ["@markup.list"]                  = { fg = P.subtext4, bold = true },
   ["@markup.list.checked"]          = { fg = P.green },
   ["@markup.list.unchecked"]        = { fg = P.yellow },
-  ["@markup.raw.block"]             = { fg = P.subtext4 },
+  ["@markup.raw.block"]             = { fg = P.white },
   ["@markup.raw.delimiter"]         = { fg = P.subtext4 },
   ["@markup.quote"]                 = { fg = P.subtext1 },
   ["@markup.list.checked.markdown"] = { fg = P.green },

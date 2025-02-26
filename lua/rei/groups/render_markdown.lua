@@ -11,6 +11,6 @@ return {
   RenderMarkdownH5Bg = { fg = P.yellow, bg = P.dark_yellow },
   RenderMarkdownH6   = { fg = P.cyan },
   RenderMarkdownH6Bg = { fg = P.cyan, bg = P.dark_cyan },
-  RenderMarkdownCode = { bg = P.grey0 },
+  RenderMarkdownCode = { fg = P.white, bg = P.grey0 },
   RenderMarkdownLink = { fg = P.cyan },
 }
