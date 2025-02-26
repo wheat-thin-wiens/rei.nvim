@@ -19,6 +19,7 @@ M.settings = {
   integrations = {
     gitsigns = true,
     indent_blankline = true,
+    lazy = true,
     lsp = true,
     mason = true,
     neotree = true,

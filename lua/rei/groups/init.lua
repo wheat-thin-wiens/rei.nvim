@@ -26,6 +26,7 @@ end
 M.plugins = {
   gitsigns = require("rei.groups.gitsigns"),
   indent_blankline = require("rei.groups.indent_blankline"),
+  lazy = require("rei.groups.lazy_pkgmgr"),
   lsp = require("rei.groups.lsp"),
   mason = require("rei.groups.mason"),
   neotree = require("rei.groups.neotree"),

@@ -53,6 +53,7 @@ opts = {
     gitsigns = true,
     indent_blankline = true,
     lsp = true,
+    lazy = true,
     mason = true,
     neotree = true,
     render_markdown = true,
