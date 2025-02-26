@@ -7,6 +7,7 @@ return {
   LazySpecial = { fg = P.blue },
   LazyLocal = { fg = P.orange },
 
-  LazyReasonRequire = { fg = P.red },
-  LazyReasonEvent = { fg = P.yellow },
+  LazyReasonRequire = { fg = P.purple },
+  LazyReasonEvent = { fg = P.orange },
+  LazyReasonCmd = { fg = P.white },
 }
