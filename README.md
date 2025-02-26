@@ -53,6 +53,7 @@ opts = {
     gitsigns = true,
     indent_blankline = true,
     lsp = true,
+    mason = true,
     neotree = true,
     render_markdown = true,
     telescope = true, -- 'borderless' theme also available, leave as true for default theme
@@ -61,6 +62,20 @@ opts = {
   },
   terminal_colors = true,
   highlight_overrides = {}
+}
+```
+
+## Transparent Background
+
+You can add the following snippet to your config if you'd like a transparent background:
+
+```lua
+opts = {
+  highlight_overrides = {
+    Normal = { bg = "None" },
+    NormalNC = { bg = "None" },
+    NormalFloat = { bg = "None" }
+  }
 }
 ```
 
