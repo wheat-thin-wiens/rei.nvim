@@ -53,12 +53,14 @@ opts = {
     gitsigns = true,
     indent_blankline = true,
     lsp = true,
+    mason = true,
     neotree = true,
     render_markdown = true,
     telescope = true, -- 'borderless' theme also available, leave as true for default theme
     treesitter = true,
     which_key = true
   },
+  transparency = false, -- Enables / Disables background transparency
   terminal_colors = true,
   highlight_overrides = {}
 }

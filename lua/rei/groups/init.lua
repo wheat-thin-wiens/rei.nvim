@@ -2,7 +2,7 @@ local M = {}
 
 P = require("rei.palette").defaults
 
-local settings = require("rei.config").settings
+Settings = require("rei.config").settings
 
 --- @class base
 --- @field hl_group table<string, table>
@@ -16,7 +16,7 @@ M.base = {
 }
 
 local function telescope_theme()
-  if settings.integrations.telescope == true then
+  if Settings.integrations.telescope == true then
     return require("rei.groups.telescope").default
   else
     return require("rei.groups.telescope").borderless
