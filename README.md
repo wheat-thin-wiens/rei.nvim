@@ -53,7 +53,9 @@ opts = {
     gitsigns = true,
     indent_blankline = true,
     lsp = true,
+    lazy = true,
     mason = true,
+    neogit = true,
     neotree = true,
     render_markdown = true,
     telescope = true, -- 'borderless' theme also available, leave as true for default theme
@@ -72,8 +74,10 @@ opts = {
 
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Lazy Package Manager](https://github.com/folke/lazy.nvim)
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [Mason](https://github.com/williamboman/mason.nvim)
+- [Neogit](https://github.com/NeogitOrg/neogit)
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)

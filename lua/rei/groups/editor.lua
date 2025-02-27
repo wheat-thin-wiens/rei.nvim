@@ -1,10 +1,12 @@
-local function transparency_enabled()
+local function get_transparency()
   if Settings.transparency then
     return "None"
   else
     return false
   end
 end
+
+local transparency = get_transparency()
 
 return {
 	ColorColumn      = { bg = P.grey1 },
@@ -25,8 +27,9 @@ return {
 	Folded           = { fg = P.grey4 },
 	FoldColumn       = { bg = P.bg, fg = P.subtext4 },
 	SignColumn       = { bg = P.bg, fg = P.subtext4 },
-	IncSearch        = { fg = P.black, bg = P.cyan },
-	CurSearch        = { fg = P.black, bg = P.cyan },
+	IncSearch        = { fg = P.bg, bg = P.blue },
+  -- IncSearch        = { fg = P.black, bg = P.cyan },
+	CurSearch        = { fg = P.bg, bg = P.blue },
 	LineNr           = { fg = P.grey4 },
   LineNrAbove      = { fg = P.grey4 } ,
   LineNrBelow      = { fg = P.grey4 } ,
@@ -35,9 +38,9 @@ return {
 	ModeMsg          = { fg = P.grey3, bold = true },
 	MoreMsg          = { fg = P.bright_Purple },
 	NonText          = { fg = P.subtext4 },
-	Normal           = { fg = P.fg, bg = transparency_enabled() or P.bg },
-	NormalNC         = { fg = P.fg, bg = transparency_enabled() or P.bg_dark },
-	NormalFloat      = { fg = P.fg, bg = transparency_enabled() or P.bg_dark },
+	Normal           = { fg = P.fg, bg = transparency or P.bg },
+	NormalNC         = { fg = P.fg, bg = transparency or P.bg_dark },
+	NormalFloat      = { fg = P.fg, bg = transparency or P.bg_dark },
 	FloatBorder      = { fg = P.grey3, bg = P.bg },
 	Pmenu            = { fg = P.fg, bg = P.black },
 	PmenuSel         = { fg = P.white, bg = P.grey3 },
