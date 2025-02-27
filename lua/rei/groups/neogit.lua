@@ -2,9 +2,9 @@ return {
   NeogitFilePath              = { fg = P.purple },
   NeogitFloatHeader           = { fg = P.bg, bg = P.blue },
 
-  NeogitHunkHeader            = { fg = P.white },
-  NeogitHunkHeaderCursor      = { fg = P.bg, bg = P.white },
-  NeogitHunkHeaderHighlight   = { fg = P.white, bg = P.dark_white },
+  NeogitHunkHeader            = { fg = P.orange },
+  NeogitHunkHeaderCursor      = { fg = P.bg, bg = P.orange },
+  NeogitHunkHeaderHighlight   = { fg = P.orange, bg = P.dark_orange },
 
   NeogitCommitViewHeader      = { fg = P.bg, bg = P.orange },
   NeogitCommitViewDescription = { fg = P.orange },
