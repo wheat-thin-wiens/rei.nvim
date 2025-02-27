@@ -44,7 +44,7 @@ return {
 	SpellCap         = { fg = P.cyan },
 	SpellLocal       = { fg = P.cyan },
 	SpellRare        = { fg = P.cyan },
-	StatusLine       = { fg = P.fg, bg = P.grey1 },
+	StatusLine       = { fg = P.fg, bg = P.grey0 },
 	StatusLineNC     = { fg = P.bg_dark },
 	StatusLineTerm   = { fg = P.fg, bg = P.grey1 },
   StatusLineTermNC = { fg = P.subtext4 },
