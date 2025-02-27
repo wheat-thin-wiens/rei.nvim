@@ -1,8 +1,7 @@
 local M = {}
 
 P = require("rei.palette").defaults
-
-Settings = require("rei.config").settings
+Transparency = require("rei.utils").transparency_enabled()
 
 --- @class base
 --- @field hl_group table<string, table>
@@ -15,13 +14,6 @@ M.base = {
   require("rei.groups.syntax")
 }
 
-local function telescope_theme()
-  if Settings.integrations.telescope == true then
-    return require("rei.groups.telescope").default
-  else
-    return require("rei.groups.telescope").borderless
-  end
-end
 
 M.plugins = {
   gitsigns = require("rei.groups.gitsigns"),
@@ -32,7 +24,7 @@ M.plugins = {
   neogit = require("rei.groups.neogit"),
   neotree = require("rei.groups.neotree"),
   render_markdown = require("rei.groups.render_markdown"),
-  telescope = telescope_theme(),
+  telescope = require("rei.utils").telescope_theme(),
   treesitter = require("rei.groups.treesitter"),
   which_key = require("rei.groups.which_key"),
 }
