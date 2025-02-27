@@ -4,24 +4,24 @@ M.default = {
   TelescopeNormal        = { link = "Normal" },
   TelescopeBorder        = { fg = P.white, bg = P.bg },
 
-  TelescopePromptNormal  = { bg = P.bg_dark },
+  TelescopePromptNormal  = { bg = Transparency or P.bg_dark },
   TelescopePromptTitle   = { fg = P.purple },
-  TelescopePromptBorder  = { fg = P.white, bg = P.bg_dark },
+  TelescopePromptBorder  = { link = "FloatBorder" },
   TelescopePromptPrefix  = { fg = P.purple },
   TelescopePromptCounter = { fg = P.purple },
 
-  TelescopePreviewNormal = { link = "TelescopePromptNormal" },
-  TelescopePreviewBorder = { link = "TelescopePromptBorder" },
-  TelescopePreviewTitle  = { link = "TelescopePromptTitle" },
-
   TelescopeResultsNormal = { link = "TelescopePromptNormal" },
-  TelescopeResultsBorder = { link = "TelescopePromptBorder" },
   TelescopeResultsTitle  = { link = "TelescopePromptTitle" },
+  TelescopeResultsBorder = { link = "TelescopePromptBorder" },
+
+  TelescopePreviewNormal = { link = "TelescopePromptNormal" },
+  TelescopePreviewTitle  = { link = "TelescopePromptTitle" },
+  TelescopePreviewBorder = { link = "TelescopePromptBorder" },
 }
 
 M.borderless =  {
-  TelescopeNormal        = { link = "Normal" },
-  TelescopeBorder        = { fg = P.white, bg = P.bg },
+  TelescopeNormal        = { fg = P.fg, bg = P.bg },
+  TelescopeBorder        = { fg = P.white, bg = "None" },
 
   TelescopePromptNormal  = { bg = P.grey0 },
   TelescopePromptTitle   = { fg = P.purple, bg = P.dark_purple },
@@ -29,14 +29,15 @@ M.borderless =  {
   TelescopePromptPrefix  = { fg = P.purple },
   TelescopePromptCounter = { fg = P.purple },
 
-  TelescopePreviewNormal = { bg = P.bg },
-  TelescopePreviewBorder = { fg = P.bg, bg = P.bg },
-  TelescopePreviewTitle  = { fg = P.blue, bg = P.dark_blue },
-
-  TelescopeResultsNormal = { bg = P.bg },
+  TelescopeResultsNormal = { link = "TelescopeNormal" },
   TelescopeResultsBorder = { fg = P.bg, bg = P.bg },
   TelescopeResultsTitle  = { fg = P.green, bg = P.dark_green },
   -- TelescopeResultsTitle = { fg = P.bg },
+
+  TelescopePreviewNormal = { link = "TelescopeNormal" },
+  TelescopePreviewBorder = { fg = P.bg, bg =  P.bg },
+  TelescopePreviewTitle  = { fg = P.blue, bg = P.dark_blue },
+
 }
 
 return M
