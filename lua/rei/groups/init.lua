@@ -30,7 +30,6 @@ M.plugins = {
   lsp = require("rei.groups.lsp"),
   mason = require("rei.groups.mason"),
   neogit = require("rei.groups.neogit"),
-  diffview = require("rei.groups.diffview"),
   neotree = require("rei.groups.neotree"),
   render_markdown = require("rei.groups.render_markdown"),
   telescope = telescope_theme(),
