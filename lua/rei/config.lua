@@ -22,6 +22,7 @@ M.settings = {
     lazy = true,
     lsp = true,
     mason = true,
+    neogit = true,
     neotree = true,
     render_markdown = true,
     telescope = true,

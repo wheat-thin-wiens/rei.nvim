@@ -29,6 +29,7 @@ M.plugins = {
   lazy = require("rei.groups.lazy_pkgmgr"),
   lsp = require("rei.groups.lsp"),
   mason = require("rei.groups.mason"),
+  neogit = require("rei.groups.neogit"),
   neotree = require("rei.groups.neotree"),
   render_markdown = require("rei.groups.render_markdown"),
   telescope = telescope_theme(),
