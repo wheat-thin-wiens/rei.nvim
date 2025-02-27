@@ -2,6 +2,8 @@ return {
   NeogitFilePath              = { fg = P.purple },
   NeogitFloatHeader           = { fg = P.bg, bg = P.blue },
 
+  NeogitChangeModified        = { fg = P.yellow, italic = true },
+
   NeogitHunkHeader            = { fg = P.orange },
   NeogitHunkHeaderCursor      = { fg = P.bg, bg = P.orange },
   NeogitHunkHeaderHighlight   = { fg = P.orange, bg = P.dark_orange },
@@ -15,7 +17,8 @@ return {
 
   NeogitDiffContext           = { fg = P.blue },
   NeogitDiffContextHighlight  = { fg = P.blue, bg = P.dark_blue },
-  NeogitDiffContextCursor     = { fg = P.bg, bg = P.blue },
+  NeogitDiffContextCursor     = { fg = P.fg, bg = P.grey4 },
+  -- NeogitDiffContextCursor     = { fg = P.bg, bg = P.blue },
 
   NeogitDiffAdd               = { fg = P.green },
   NeogitDiffAdditions         = { fg = P.green },
