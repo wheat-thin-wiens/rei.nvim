@@ -52,7 +52,7 @@ return {
 
   diffAdded = { fg = P.green },
   diffRemove = { fg = P.red },
-  diffChanged = { fg = P.cyan },
+  diffChanged = { fg = P.yellow },
   diffOldFile = { fg = P.grey4 },
   diffNewFile = { fg = P.fg },
   diffFile = { fg = P.subtext4 },
