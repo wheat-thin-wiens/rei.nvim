@@ -12,7 +12,7 @@ Settings = require("rei.config").settings
 
 M.base = {
   require("rei.groups.editor"),
-  require("rei.groups.syntax")
+  require("rei.groups.syntax"),
 }
 
 local function telescope_theme()
@@ -30,6 +30,7 @@ M.plugins = {
   lsp = require("rei.groups.lsp"),
   mason = require("rei.groups.mason"),
   neogit = require("rei.groups.neogit"),
+  diffview = require("rei.groups.diffview"),
   neotree = require("rei.groups.neotree"),
   render_markdown = require("rei.groups.render_markdown"),
   telescope = telescope_theme(),

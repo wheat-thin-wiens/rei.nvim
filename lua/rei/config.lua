@@ -14,7 +14,7 @@ M.settings = {
     functions = {},
     booleans = {},
     loops = {},
-    variables = {}
+    variables = {},
   },
   integrations = {
     gitsigns = true,
@@ -31,7 +31,7 @@ M.settings = {
   },
   transparency = false,
   terminal_colors = true,
-  highlight_overrides = {}
+  highlight_overrides = {},
 }
 
 --- Takes user config and saves it in settings
