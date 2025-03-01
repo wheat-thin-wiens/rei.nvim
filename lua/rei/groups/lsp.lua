@@ -40,11 +40,11 @@ return {
 
     -- Diagnostics
     DiagnosticOk             = { fg = P.green },
-    DiagnosticError          = { fg = P.bright_red },
+    DiagnosticError          = { fg = P.orange },
     DiagnosticWarn           = { fg = P.yellow },
     DiagnosticInfo           = { fg = P.purple },
     DiagnosticHint           = { fg = P.cyan },
-    DiagnosticUnderlineError = { fg = P.bright_red, underline = true },
+    DiagnosticUnderlineError = { fg = P.orange, underline = true },
     DiagnosticUnderlineWarn  = { fg = P.yellow, underline = true },
     DiagnosticUnderlineInfo  = { fg = P.purple, underline = true },
     DiagnosticUnderlineHint  = { fg = P.cyan, underline = true },

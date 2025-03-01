@@ -18,6 +18,7 @@ M.settings = {
   },
   integrations = {
     gitsigns = true,
+    hrsh7th_cmp = true,
     indent_blankline = true,
     lazy = true,
     lsp = true,
