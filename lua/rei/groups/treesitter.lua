@@ -41,7 +41,7 @@ return {
   ["@type.builtin"]           = { fg = P.yellow },
   ["@type.definition"]        = { link = "Type" },
 
-  ["@attribute"]              = { fg = P.orange },
+  ["@attribute"]              = { fg = P.cyan },
   ["@property"]               = { fg = P.purple },
 
   -- Functions
@@ -75,7 +75,7 @@ return {
 
   ["@punctuation"]            = { fg = P.subtext1 },
   ["@punctuation.delimiter"]  = { fg = P.subtext1 },
-  ["@punctuation.bracket"]    = { fg = P.bright_red },
+  ["@punctuation.bracket"]    = { fg = P.white },
   ["@punctuation.special"]    = { fg = P.bright_green },
 
   ["@symbol"]                 = { fg = P.yellow },
