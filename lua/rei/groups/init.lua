@@ -16,6 +16,7 @@ M.base = {
 
 
 M.plugins = {
+  hrsh7th_cmp = require("rei.groups.hrsh7th_cmp"),
   gitsigns = require("rei.groups.gitsigns"),
   indent_blankline = require("rei.groups.indent_blankline"),
   lazy = require("rei.groups.lazy_pkgmgr"),

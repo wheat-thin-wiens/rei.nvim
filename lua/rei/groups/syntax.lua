@@ -40,7 +40,7 @@ return {
   SpecialComment = { fg = P.subtext4 },
   Debug          = { fg = P.cyan },
   Underlined     = { underline = true },
-  Error          = { fg = P.bright_red },
+  Error          = { fg = P.orange },
   Todo           = { fg = P.cyan },
 
   htmlArg = { fg = P.fg, italic = true },
