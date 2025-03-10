@@ -51,6 +51,7 @@ opts = {
   },
   integrations = {
     gitsigns = true,
+    hrsh7th_cmp = true,
     indent_blankline = true,
     lsp = true,
     lazy = true,
@@ -80,6 +81,7 @@ opts = {
 - [Neogit](https://github.com/NeogitOrg/neogit)
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
