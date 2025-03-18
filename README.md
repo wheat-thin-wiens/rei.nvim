@@ -104,4 +104,4 @@ Included you will also find themes for the following programs:
 
 - [oldworld.nvim](https://github.com/dgox16/oldworld.nvim)
 - [catppuccin](https://github.com/catppuccin/nvim)
-
+- [night-owl.nvim](https://github.com/oxfist/night-owl.nvim)
