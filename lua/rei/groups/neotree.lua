@@ -5,5 +5,6 @@ return {
   NeoTreeModified     = { fg = P.yellow },
   NeoTreeGitUntracked = { fg = P.orange },
   NeoTreeGitUnstaged  = { fg = P.orange },
-  NeoTreeGitConflict  = { fg = P.orange }
+  NeoTreeGitConflict  = { fg = P.orange },
+  NeoTreeDimText      = { fg = P.white }
 }
