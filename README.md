@@ -9,6 +9,12 @@
 
 ![screenshot](/assets/screenshot1.png)
 
+# Updates
+
+3/27/25
+
+If you are experiencing issues with the lualine theme after updating to Neovim 0.11, please make sure lualine is up to date.
+
 # Install
 
 ## Lazy
@@ -51,7 +57,6 @@ opts = {
   },
   integrations = {
     gitsigns = true,
-    hrsh7th_cmp = true,
     indent_blankline = true,
     lsp = true,
     lazy = true,
@@ -81,7 +86,6 @@ opts = {
 - [Neogit](https://github.com/NeogitOrg/neogit)
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -104,4 +108,4 @@ Included you will also find themes for the following programs:
 
 - [oldworld.nvim](https://github.com/dgox16/oldworld.nvim)
 - [catppuccin](https://github.com/catppuccin/nvim)
-- [night-owl.nvim](https://github.com/oxfist/night-owl.nvim)
+
