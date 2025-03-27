@@ -26,6 +26,7 @@ M.settings = {
     neogit = true,
     neotree = true,
     noice = true,
+    notify = true,
     render_markdown = true,
     telescope = true,
     treesitter = true,

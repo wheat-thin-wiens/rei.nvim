@@ -25,6 +25,7 @@ M.plugins = {
   neogit           = require("rei.groups.neogit"),
   neotree          = require("rei.groups.neotree"),
   noice            = require("rei.groups.noice"),
+  notify           = require("rei.groups.notify"),
   render_markdown  = require("rei.groups.render_markdown"),
   telescope        = require("rei.utils").telescope_theme(),
   treesitter       = require("rei.groups.treesitter"),
