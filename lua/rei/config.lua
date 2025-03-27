@@ -25,6 +25,7 @@ M.settings = {
     mason = true,
     neogit = true,
     neotree = true,
+    noice = true,
     render_markdown = true,
     telescope = true,
     treesitter = true,
