@@ -9,6 +9,12 @@
 
 ![screenshot](/assets/screenshot1.png)
 
+# Updates
+
+3/27/25
+
+If you are experiencing issues with the lualine theme after updating to Neovim 0.11, please make sure lualine is up to date.
+
 # Install
 
 ## Lazy
