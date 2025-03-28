@@ -1,0 +1,113 @@
+* {
+  bg-col: #0E1723;
+  border-col: #0E1723;
+  fg-col: #CDCDCD;
+  blue: #91B8E9;
+  dark-blue: #3C4D60;
+  purple: #B9AEE6;
+  dark-purple: #48445A;
+  green: #809FA1;
+  b-orange: #FDB3B2;
+
+  width: 500;
+  font: "JetBrainsMono 14";
+}
+
+element-text, element-icon, mode-switcher {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+window {
+  height: 340px;
+  location: center;
+  border-color: @border-col;
+  background-color: @bg-col;
+}
+
+mainbox {
+  background-color: @bg-col;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @bg-col;
+  padding: 2px;
+}
+
+prompt {
+  background-color: @dark-blue;
+  text-color: @blue;
+  padding: 6px;
+  margin: 10px 0px 0px 10px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: ":";
+}
+
+entry {
+  padding: 6px;
+  text-color: @fg-col;
+  background-color: @bg-col;
+  margin: 10px 0px 0px 10px;
+}
+
+listview {
+  border: 0px 0px 0px;
+  padding: 6px 0px 0px;
+  margin: 10px 12px 10px 12px;
+  columns: 1;
+  lines: 5;
+  background-color: @bg-col;
+  fixed-height: true;
+}
+
+element {
+  padding: 5px;
+  spacing: 5px;
+  background-color: @bg-col;
+}
+
+element normal {
+  text-color: @purple;
+}
+
+element-icon {
+  size: 25px;
+}
+
+element selected {
+  text-color: @b-orange;
+}
+
+mode-switcher {
+  spacing: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: @dark-blue;
+  text-color: @fg-col;
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @purple;
+}
+
+message {
+  background-color: @bg-col;
+  margin: 2px;
+  padding: 2px;
+}
+
+textbox {
+  padding: 6px;
+  margin: 20px 0px 0px 20px;
+  text-color: @purple;
+  background-color: @bg-col;
+}
