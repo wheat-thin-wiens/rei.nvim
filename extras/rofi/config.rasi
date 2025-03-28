@@ -1,0 +1,17 @@
+configuration {
+    display-drun: "Applications:";
+    font: "JetBrainsMono 14";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "ghostty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-combi: "All";
+    display-run: "Run";
+    display-window: "Window";
+    sidebar-mode: false;
+}
+
+@theme "~/.config/rofi/themes/rei.rasi"
