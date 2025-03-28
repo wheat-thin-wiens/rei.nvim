@@ -102,6 +102,8 @@ Included you will also find themes for the following programs:
 
 - ghostty
 - Starship
+- rofi
+- waybar
 - WezTerm
 
 # Special Thanks
