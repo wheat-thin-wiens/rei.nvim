@@ -4,7 +4,7 @@
 </h2><br>
 
 <p align="center">
-    Finally, a NeoVim theme that goes perfectly with your anime girl wallpaper.
+    Finally, a Neovim color scheme that goes perfectly with your anime girl wallpaper.
 </p><br>
 
 ![screenshot](/assets/screenshot1.png)
