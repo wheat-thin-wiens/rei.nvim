@@ -1,0 +1,73 @@
+* { 
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+tooltip {
+  background-color: rgba(14, 23, 35, 0.95);
+  color: #CDCDCD;
+}
+
+window#waybar {
+  background-color: rgba(14, 23, 35, 0.95);
+  border-radius: 20px;
+}
+
+#window {
+  color: #9DBCD0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0px 10px;
+}
+
+#workspaces {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+#workspaces button {
+  color: #9DBCD0;
+  padding: 0px 4px;
+}
+
+#clock {
+  margin: 2px 4px 2px 4px;
+  padding: 0px 10px 0px 10px;
+  color: #91B8E9;
+}
+
+#backlight,
+#battery,
+#pulseaudio,
+#cava,
+#network,
+#bluetooth,
+#custom-os_button {
+  margin: 2px 4px 2px 4px;
+  padding: 0px 10px 0px 10px;
+  color: #B4B4E8;
+}
+
+#custom-os_button {
+  margin: 2px 4px 2px 4px;
+  padding: 0px 10px 0px 10px;
+  color: #9DBCD0;
+}
+
+#custom-power_button,
+#custom-restart,
+#custom-logout,
+#custom-lock {
+  margin: 2px 4px 2px 4px;
+  padding: 0px 10px 0px 10px;
+  color: #FD9491;
+  border-bottom: 2px solid #FD9491;
+}

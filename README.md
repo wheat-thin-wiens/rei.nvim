@@ -100,8 +100,11 @@ see about getting it added.
 
 Included you will also find themes for the following programs:
 
+- btop
 - ghostty
 - Starship
+- rofi
+- waybar
 - WezTerm
 
 # Special Thanks

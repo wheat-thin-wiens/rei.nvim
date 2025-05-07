@@ -1,0 +1,126 @@
+{
+  "position": "top",
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-right": 5,
+  "spacing": 5,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "group/power",
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "cava",
+    "pulseaudio",
+    "backlight",
+    "bluetooth",
+    "network",
+    "battery"
+  ],
+  "clock": {
+    "format": "<span></span>{:%a %d %I:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "network": {
+    "format-wifi": "<span size='13000'>{icon}  </span>{essid}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": "<span size='13000'>󰈁</span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000'>󰤭  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    "on-click": "nmcli device wifi list"
+  },
+  "battery": {
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", ""]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    },
+    "sort-by-number": true
+  },
+  "bluetooth": {
+    "format-on": "󰂯 {status}",
+    "format-off": "󰂲 {status}",
+    "format-disabled": "󰂲 {status}",
+    "format-connected-battery": "󰥈 {device_alias} {device_battery_percentage}%",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "on-click": "blueman-manager"
+  },
+  "cava": {
+    "framerate": 30,
+    "autosens": 1,
+    "bars": 8,
+    "lower_cutoff_freq": 50,
+    "higher_cutoff_freq": 10000,
+    "method": "pulse",
+    "source": "auto",
+    "stereo": true,
+    "reverse": false,
+    "bar_delimiter": 0,
+    "monstercat": false,
+    "noise_reduction": 0.77,
+    "input_delay": 2,
+    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+    "actions": {}
+  },
+  "custom/power_button": {
+    "format": " 󰐥 ",
+    "on-click": "shutdown now",
+    "tooltip-format": "Shutdown"
+  },
+  "custom/restart": {
+    "format": "  ",
+    "on-click": "shutdown -r now",
+    "tooltip-format": "Restart"
+  },
+  "custom/lock": {
+    "format": "  ",
+    "on-click": "hyprlock",
+    "tooltip-format": "Lock screen"
+  },
+  "custom/logout": {
+    "format": " 󰍃 ",
+    "on-click": "hyprctl dispatch exit",
+    "tooltip-format": "Log out"
+  },
+  "custom/os_button": {
+    "format": "󰣇",
+    "on-click": "",
+    "tooltip-format": "arch btw"
+  },
+  "group/power": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 250,
+      "transition-left-to-right": true
+    },
+    "modules": ["custom/os_button", "custom/power_button", "custom/restart", "custom/lock", "custom/logout"]
+  }
+}

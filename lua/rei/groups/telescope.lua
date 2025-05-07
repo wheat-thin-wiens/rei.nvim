@@ -19,7 +19,7 @@ M.default = {
   TelescopePreviewBorder = { link = "TelescopePromptBorder" },
 }
 
-M.borderless = {
+M.borderless =  {
   TelescopeNormal        = { fg = P.fg, bg = P.bg },
   TelescopeBorder        = { fg = P.white, bg = "None" },
 
