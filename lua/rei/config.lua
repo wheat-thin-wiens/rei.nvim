@@ -27,6 +27,7 @@ M.settings = {
     neotree = true,
     noice = true,
     notify = true,
+    obsidian = true,
     render_markdown = true,
     telescope = true,
     treesitter = true,
