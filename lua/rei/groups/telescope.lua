@@ -6,7 +6,7 @@ M.default = {
 
   TelescopePromptNormal  = { bg = Transparency or P.bg_dark },
   TelescopePromptTitle   = { fg = P.purple },
-  TelescopePromptBorder  = { link = "FloatBorder" },
+  TelescopePromptBorder  = { fg = P.grey4, bg = Transparency or P.bg_dark },
   TelescopePromptPrefix  = { fg = P.purple },
   TelescopePromptCounter = { fg = P.purple },
 
