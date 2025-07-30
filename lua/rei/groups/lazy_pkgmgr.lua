@@ -1,13 +1,14 @@
 return {
-  LazyH1 = { link = "IncSearch" },
-  LazyH2 = { fg = P.purple },
-  LazyButton = { fg = P.fg, bg = P.grey0 },
-  LazyButtonActive = { fg = P.fg, bg = P.grey4 },
+  LazyH1            = { link = "IncSearch" },
+  LazyH2            = { fg = P.purple },
+  LazyButton        = { fg = P.fg, bg = P.grey0 },
+  LazyButtonActive  = { fg = P.fg, bg = P.grey4 },
+  LazyDimmed        = { fg = P.grey2 },
 
-  LazySpecial = { fg = P.blue },
-  LazyLocal = { fg = P.orange },
+  LazySpecial       = { fg = P.blue },
+  LazyLocal         = { fg = P.orange },
 
   LazyReasonRequire = { fg = P.purple },
-  LazyReasonEvent = { fg = P.orange },
-  LazyReasonCmd = { fg = P.white },
+  LazyReasonEvent   = { fg = P.orange },
+  LazyReasonCmd     = { fg = P.white },
 }
