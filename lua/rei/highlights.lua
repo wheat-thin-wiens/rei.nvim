@@ -6,13 +6,13 @@ local M = {}
 local config = require("rei.config")
 local terminal = require("rei.terminal")
 
-local base = require("rei.groups.init").base
-local plugins = require("rei.groups.init").plugins
+local builtins = require("rei.builtins.init").builtins
+local plugins = require("rei.plugins.init").plugins
 
 local loaded_ints = {}
 
 --- Sets highlight groups according to user specification
---- @param highlights table
+--- @param highlights table<string, table>
 M.set_highlights = function(highlights)
   for name, hl in pairs(highlights) do
     vim.api.nvim_set_hl(0, name, hl)
@@ -20,7 +20,7 @@ M.set_highlights = function(highlights)
 end
 
 M.setup = function()
-  for _, group in ipairs(base) do
+  for _, group in pairs(builtins) do
     M.set_highlights(group)
   end
 

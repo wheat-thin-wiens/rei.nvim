@@ -1,10 +1,22 @@
 local M = {}
 
 --- @class settings
---- @field styles table
---- @field integrations table
+--- @field styles styles
+--- @field integrations integrations
+--- @field extras extras
+--- @field highlight_overrides styles
+
+--- @class styles
+--- @field style table<string, table>
+
+--- @class integrations
+--- @field plugin boolean
+
+--- @class extras
+--- @field transparency boolean
+--- @field high_constrast boolean
 --- @field terminal_colors boolean
---- @field highlight_overrides table
+--- @field telescope_theme string
 
 M.settings = {
   styles = {
@@ -33,8 +45,12 @@ M.settings = {
     treesitter = true,
     which_key = true,
   },
-  transparency = false,
-  terminal_colors = true,
+  extras = {
+    transparency = false,
+    high_contrast = false,
+    terminal_colors = true,
+    telescope_theme = "default",
+  },
   highlight_overrides = {}
 }
 

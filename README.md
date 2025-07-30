@@ -64,12 +64,15 @@ opts = {
     neogit = true,
     neotree = true,
     render_markdown = true,
-    telescope = true, -- 'borderless' theme also available, leave as true for default theme
+    telescope = true,
     treesitter = true,
     which_key = true
   },
-  transparency = false, -- Enables / Disables background transparency
-  terminal_colors = true,
+  extras = {
+    terminal_colors = true,
+    transparency = false, -- Enables / Disables background transparency
+    telescope_theme = "default", --borderless theme also available
+  },
   highlight_overrides = {}
 }
 ```
