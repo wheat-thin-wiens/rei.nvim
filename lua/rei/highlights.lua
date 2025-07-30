@@ -8,6 +8,7 @@ local terminal = require("rei.terminal")
 
 local builtins = require("rei.builtins.init").builtins
 local plugins = require("rei.plugins.init").plugins
+local langs = require("rei.lang.init").lang
 
 local loaded_ints = {}
 
@@ -32,6 +33,10 @@ M.setup = function()
 
   for _, plugin in ipairs(loaded_ints) do
     M.set_highlights(plugins[plugin])
+  end
+
+  for _, group in pairs(langs) do
+    M.set_highlights(group)
   end
 
   for group, setting in pairs(config.highlight_overrides) do
