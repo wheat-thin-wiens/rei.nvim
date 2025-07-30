@@ -70,6 +70,7 @@ opts = {
   },
   extras = {
     terminal_colors = true,
+    high_contrast = false,
     transparency = false, -- Enables / Disables background transparency
     telescope_theme = "default", --borderless theme also available
   },
