@@ -8,8 +8,10 @@ local terminal = require("rei.terminal")
 
 local builtins = require("rei.builtins.init").builtins
 local plugins = require("rei.plugins.init").plugins
+local langs = require("rei.langs.init").langs
 
-local loaded_ints = {}
+local loaded_integs = {}
+local loaded_langs = {}
 
 --- Sets highlight groups according to user specification
 --- @param highlights table<string, table>
@@ -26,12 +28,22 @@ M.setup = function()
 
   for plugin, enabled in pairs(config.integrations) do
     if enabled then
-      table.insert(loaded_ints, plugin)
+      table.insert(loaded_integs, plugin)
     end
   end
 
-  for _, plugin in ipairs(loaded_ints) do
+  for _, plugin in ipairs(loaded_integs) do
     M.set_highlights(plugins[plugin])
+  end
+
+  for lang, enabled in pairs(config.lang) do
+    if enabled then
+      table.insert(loaded_langs, lang)
+    end
+  end
+
+  for _, lang in ipairs(loaded_langs) do
+    M.set_highlights(langs[lang])
   end
 
   for group, setting in pairs(config.highlight_overrides) do

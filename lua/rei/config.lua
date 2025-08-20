@@ -12,6 +12,9 @@ local M = {}
 --- @class integrations
 --- @field plugin boolean
 
+---@class lang
+---@field plugin boolean
+
 --- @class extras
 --- @field transparency boolean
 --- @field high_constrast boolean
@@ -45,6 +48,10 @@ M.settings = {
     treesitter = true,
     which_key = true,
   },
+  lang = {
+    ts = true,
+    go = true,
+  },
   extras = {
     transparency = false,
     high_contrast = false,
@@ -71,6 +78,12 @@ M.setup = function(opts)
           -- M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
         end
       end
+    -- elseif k == "lang" then
+    --   for lang, setting in pairs(v) do
+    --     if M.settings.lang[lang] ~= nil then
+    --       M.settings.lang[lang] = vim.tbl_deep_extend("keep", M.settings.lang[lang], setting)
+    --     end
+    --   end
     else
       M.settings[k] = v
     end
