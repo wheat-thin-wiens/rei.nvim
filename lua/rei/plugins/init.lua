@@ -8,7 +8,7 @@ Transparency = require("rei.utils").transparency_enabled()
 
 M.plugins = {
   hrsh7th_cmp      = require("rei.plugins.hrsh7th_cmp"),
-  gitsigns         = require("rei.plugins.gitsigns"),
+  gitsigns         = require("rei.plugins.gitsigns").lines,
   indent_blankline = require("rei.plugins.indent_blankline"),
   lazy             = require("rei.plugins.lazy_pkgmgr"),
   lsp              = require("rei.plugins.lsp"),
