@@ -1,3 +1,13 @@
+local eob_set = function()
+  if Transparency then
+    return P.grey4
+  else
+    return P.bg
+  end
+end
+
+local eob = eob_set()
+
 return {
 	ColorColumn      = { bg = P.grey1 },
 	Conceal          = { fg = P.grey1 },
@@ -10,7 +20,7 @@ return {
 	DiffChange       = { fg = P.yellow },
 	DiffDelete       = { fg = P.red, bg = P.dark_red },
 	DiffText         = { fg = P.yellow, underline = true },
-	EndOfBuffer      = { fg = P.bg },
+	EndOfBuffer      = { fg = eob },
 	ErrorMsg         = { fg = P.orange },
 	VertSplit        = { fg = P.grey2 },
 	WinSeparator     = { fg = P.grey2 },

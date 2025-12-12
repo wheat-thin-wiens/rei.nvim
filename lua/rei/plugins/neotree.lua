@@ -1,7 +1,12 @@
 return {
   NeoTreeFloatBorder  = { fg = P.grey3, bg = P.bg },
   NeoTreeFloatTitle   = { fg = P.subtext4, bg = P.fg },
+
   NeoTreeTitleBar     = { fg = P.fg, bg = P.grey1},
+
+  NeoTreeDirectoryName = { fg = P.purple },
+  NeoTreeDirectoryIcon = { fg = P.purple },
+
   NeoTreeModified     = { fg = P.yellow },
   NeoTreeGitUntracked = { fg = P.orange },
   NeoTreeGitUnstaged  = { fg = P.orange },
