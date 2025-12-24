@@ -71,4 +71,8 @@ return {
 	WildMenu         = { fg = P.black, bg = P.purple },
 	Winbar           = { fg = P.fg, bg = P.grey1 },
 	WinbarNC         = { fg = P.subtext4, bg = P.bg_dark },
+  netrw            = {},
+  netrwHdr         = { fg = P.fg },
+  netrwDir         = { fg = P.Purple },
+  netrwExe         = { fg = P.blue },
 }
