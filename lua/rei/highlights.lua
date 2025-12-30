@@ -21,6 +21,7 @@ M.set_highlights = function(highlights)
   end
 end
 
+--- Set highlights
 M.setup = function()
   for _, group in pairs(builtins) do
     M.set_highlights(group)

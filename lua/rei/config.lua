@@ -21,6 +21,7 @@ local M = {}
 --- @field terminal_colors boolean
 --- @field telescope_theme string
 
+-- Default settings
 M.settings = {
   styles = {
     comments = {},
@@ -49,8 +50,9 @@ M.settings = {
     which_key = true,
   },
   lang = {
-    ts = true,
-    go = true,
+    go   = true,
+    java = true,
+    ts   = true,
   },
   extras = {
     transparency = false,
