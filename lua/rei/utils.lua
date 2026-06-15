@@ -3,7 +3,7 @@ local M = {}
 local settings = require("rei.config").settings
 
 M.telescope_theme = function()
-  if settings.integrations.telescope == true then
+  if settings.integrations.telescope.enabled == true then
     return require("rei.plugins.telescope").default
   else
     return require("rei.plugins.telescope").borderless
@@ -11,7 +11,7 @@ M.telescope_theme = function()
 end
 
 M.telescope_extras = function()
-  if settings.extras.telescope_theme == "default" then
+  if settings.integrations.telescope.theme == "default" then
     return require("rei.plugins.telescope").default
   else
     return require("rei.plugins.telescope").borderless

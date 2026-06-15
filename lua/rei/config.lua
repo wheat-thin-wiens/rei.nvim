@@ -12,8 +12,11 @@ local M = {}
 --- @class integrations
 --- @field plugin boolean
 
----@class lang
----@field plugin boolean
+--- @class plugin
+--- @field enabled boolean
+
+--- @class lang
+--- @field plugin boolean
 
 --- @class extras
 --- @field transparency boolean
@@ -33,21 +36,53 @@ M.settings = {
     variables = {}
   },
   integrations = {
-    gitsigns = true,
-    hrsh7th_cmp = true,
-    indent_blankline = true,
-    lazy = true,
-    lsp = true,
-    mason = true,
-    neogit = true,
-    neotree = true,
-    noice = true,
-    notify = true,
-    obsidian = true,
-    render_markdown = true,
-    telescope = true,
-    treesitter = true,
-    which_key = true,
+    gitsigns = {
+      enabled = true,
+    },
+    hrsh7th_cmp = {
+      enabled = true,
+      italic_highlight = false,
+    },
+    indent_blankline = {
+      enabled = true,
+    },
+    lazy = {
+      enabled = true,
+    },
+    lsp = {
+      enabled = true,
+    },
+    mason = {
+      enabled = true
+    },
+    neogit = {
+      enabled = true,
+    },
+    neotree = {
+      enabled = true,
+    },
+    noice = {
+      enabled = true,
+    },
+    notify = {
+      enabled = true,
+    },
+    obsidian = {
+      enabled = true,
+    },
+    render_markdown = {
+      enabled = true,
+    },
+    telescope = {
+      enabled = true,
+      theme = "default",
+    },
+    treesitter = {
+      enabled = true,
+    },
+    which_key = {
+      enabled = true,
+    },
   },
   lang = {
     go   = true,
@@ -58,21 +93,30 @@ M.settings = {
     transparency = false,
     high_contrast = false,
     terminal_colors = true,
-    telescope_theme = "default",
+    -- telescope_theme = "default",
   },
   highlight_overrides = {}
 }
 
 --- Takes user config and saves it in settings
+--- Accessible from other modules with `require("rei.config")`
 --- @param opts settings
 M.setup = function(opts)
   opts = opts or M.settings
 
+  -- Iterate through opts
+  -- k is list of setting categories, v is settings within a category
   for k, v in pairs(opts) do
+
+    -- Integration settings
     if k == "integrations" then
-      for plugin, enabled in pairs(v) do
-        M.settings.integrations[plugin] = enabled
+      -- Iterate through plugins and their corresponding settings
+      for plugin, settings in pairs(v) do
+        M.settings.integrations[plugin] = settings
+        -- M.settings.integrations[plugin].enabled = enabled
       end
+
+    -- Style settings
     elseif k == "styles" then
       for style, setting in pairs(v) do
         if M.settings.styles[style] ~= nil then
@@ -80,6 +124,8 @@ M.setup = function(opts)
           -- M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
         end
       end
+
+    -- Lang settings
     -- elseif k == "lang" then
     --   for lang, setting in pairs(v) do
     --     if M.settings.lang[lang] ~= nil then
