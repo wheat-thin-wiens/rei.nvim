@@ -1,26 +1,32 @@
 local M = {}
 
+--- @class rei.config: settings
+--- @field settings settings
+--- @field setup fun(opts?: settings)
+
 --- @class settings
 --- @field styles styles
 --- @field integrations integrations
+--- @field lang lang
 --- @field extras extras
---- @field highlight_overrides styles
+--- @field highlight_overrides table<string, table>
 
 --- @class styles
---- @field style table<string, table>
+--- @field [string] table
 
 --- @class integrations
---- @field plugin boolean
+--- @field [string] plugin
 
 --- @class plugin
 --- @field enabled boolean
+--- @field [string] any
 
 --- @class lang
---- @field plugin boolean
+--- @field [string] boolean
 
 --- @class extras
 --- @field transparency boolean
---- @field high_constrast boolean
+--- @field high_contrast boolean
 --- @field terminal_colors boolean
 --- @field telescope_theme string
 
@@ -36,53 +42,31 @@ M.settings = {
     variables = {}
   },
   integrations = {
-    gitsigns = {
-      enabled = true,
-    },
+    gitsigns         = { enabled = true },
+
     hrsh7th_cmp = {
       enabled = true,
       italic_highlight = false,
     },
-    indent_blankline = {
-      enabled = true,
-    },
-    lazy = {
-      enabled = true,
-    },
-    lsp = {
-      enabled = true,
-    },
-    mason = {
-      enabled = true
-    },
-    neogit = {
-      enabled = true,
-    },
-    neotree = {
-      enabled = true,
-    },
-    noice = {
-      enabled = true,
-    },
-    notify = {
-      enabled = true,
-    },
-    obsidian = {
-      enabled = true,
-    },
-    render_markdown = {
-      enabled = true,
-    },
+
+    indent_blankline = { enabled = true },
+    lazy             = { enabled = true },
+    lsp              = { enabled = true },
+    mason            = { enabled = true },
+    neogit           = { enabled = true },
+    neotree          = { enabled = true },
+    noice            = { enabled = true },
+    notify           = { enabled = true },
+    obsidian         = { enabled = true },
+    render_markdown  = { enabled = true },
+
     telescope = {
       enabled = true,
       theme = "default",
     },
-    treesitter = {
-      enabled = true,
-    },
-    which_key = {
-      enabled = true,
-    },
+
+    treesitter       = { enabled = true },
+    which_key        = { enabled = true },
   },
   lang = {
     go   = true,
@@ -93,7 +77,6 @@ M.settings = {
     transparency = false,
     high_contrast = false,
     terminal_colors = true,
-    -- telescope_theme = "default",
   },
   highlight_overrides = {}
 }
@@ -113,7 +96,6 @@ M.setup = function(opts)
       -- Iterate through plugins and their corresponding settings
       for plugin, settings in pairs(v) do
         M.settings.integrations[plugin] = settings
-        -- M.settings.integrations[plugin].enabled = enabled
       end
 
     -- Style settings
@@ -121,7 +103,6 @@ M.setup = function(opts)
       for style, setting in pairs(v) do
         if M.settings.styles[style] ~= nil then
           M.settings.styles[style] = vim.tbl_deep_extend("keep", M.settings.styles[style], setting)
-          -- M.settings.styles[style] = vim.tbl_deep_extend("keep", setting, M.settings.styles[style])
         end
       end
 

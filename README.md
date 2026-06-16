@@ -11,9 +11,17 @@
 
 # Updates
 
-3/27/25
+## 3/27/25
 
 If you are experiencing issues with the lualine theme after updating to Neovim 0.11, please make sure lualine is up to date.
+
+# Breaking Changes from Main
+
+## Plugin settings
+
+All plugins in `opts.integrations` have been changed from booleans to tables with enabled fields.
+This allows for additional settings to be added in the future without further breaking changes.
+If you have certain plugins enabled / disabled, please update your config to reflect these changes.
 
 # Install
 
@@ -56,22 +64,32 @@ opts = {
     loops = { italic = true }
   },
   integrations = {
-    gitsigns = true,
-    indent_blankline = true,
-    lsp = true,
-    lazy = true,
-    mason = true,
-    neogit = true,
-    neotree = true,
-    render_markdown = true,
-    telescope = true,
-    treesitter = true,
-    which_key = true
+    gitsigns         = { enabled = true },
+    hrsh7th_cmp = {
+      enabled = true,
+      italic_highlight = false,
+    },
+    indent_blankline = { enabled = true },
+    lazy             = { enabled = true },
+    lsp              = { enabled = true },
+    mason            = { enabled = true },
+    neogit           = { enabled = true },
+    neotree          = { enabled = true },
+    noice            = { enabled = true },
+    notify           = { enabled = true },
+    obsidian         = { enabled = true },
+    render_markdown  = { enabled = true },
+    telescope = {
+      enabled = true,
+      theme = "default", -- "borderless" also available
+    },
+    treesitter       = { enabled = true },
+    which_key        = { enabled = true },
   },
   extras = {
-    terminal_colors = true,
     transparency = false, -- Enables / Disables background transparency
-    telescope_theme = "default", --borderless theme also available
+    high_contrast = false,
+    terminal_colors = true,
   },
   highlight_overrides = {}
 }
@@ -89,15 +107,38 @@ opts = {
 - [Neogit](https://github.com/NeogitOrg/neogit)
 - [NeoVim LSP](https://github.com/neovim/nvim-lspconfig)
 - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [which-key](https://github.com/folke/which-key.nvim)
 
-...with plans for more.
-
 If you don't see your favorite plugin listed, go ahead and make a request and I can
 see about getting it added.
+
+## hrsh7th_cmp
+
+`opts.integrations.hrsh7th_cmp.italic_highlight` can be enabled to make the selected option italic for greater contrast:
+
+Enabled:
+
+![italic_enabled](/assets/italic_highlight_enabled.png)
+
+Disabled:
+
+![italic_disabled](/assets/italic_highlight_disabled.png)
+
+
+## telescope
+
+Default:
+
+![telescope_default](/assets/telescope_default.png)
+
+Borderless:
+
+![telescope_borderless](assets/telescope_borderless.png)
+
 
 # Extras
 
