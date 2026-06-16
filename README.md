@@ -30,6 +30,7 @@ If you have certain plugins enabled / disabled, please update your config to ref
 ```lua
 return {
   "wheat-thin-wiens/rei.nvim",
+  branch = "rei2",
   priority = 1000,
   opts = {}
 }
@@ -40,6 +41,7 @@ or, to set the colorscheme from the config:
 ```lua
 return {
     "wheat-thin-wiens/rei.nvim",
+    branch = "rei2",
     priority = 1000,
     config = function()
       require("rei.nvim").setup({
