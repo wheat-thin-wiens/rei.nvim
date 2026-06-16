@@ -35,9 +35,11 @@ return {
 	IncSearch        = { fg = P.bg, bg = P.blue },
 	Italic           = { fg = P.blue, italic = true },
   -- IncSearch        = { fg = P.black, bg = P.cyan },
+
 	-- LineNr           = { fg = P.fg },
- --  LineNrAbove      = { fg = P.grey4 } ,
- --  LineNrBelow      = { fg = P.grey4 } ,
+  -- LineNrAbove      = { fg = P.grey4 } ,
+  -- LineNrBelow      = { fg = P.grey4 } ,
+
 	MatchParen       = { fg = P.orange, underline = true },
 	ModeMsg          = { fg = P.grey3, bold = true },
 	MoreMsg          = { fg = P.bright_Purple },
