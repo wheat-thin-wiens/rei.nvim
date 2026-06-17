@@ -116,4 +116,7 @@ return {
   ["@markup.strong"]                = { link = "@text.strong" },
   ["@markup.italic"]                = { link = "@text.italic" },
   ["@markup.strikethrough"]         = { link = "@text.strikethrough" },
+
+  -- Markdown
+  -- ["@spell.markdown"]               = { fg = P.fg, bg = P.bg },
 }

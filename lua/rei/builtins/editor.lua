@@ -28,7 +28,7 @@ return {
 	ErrorMsg         = { fg = P.orange },
 
 	FloatBorder      = { fg = P.grey4, bg = Transparency or P.bg },
-	-- FloatBorder      = { fg = P.grey4, bg = Transparency or P.bg },
+	-- FloatBorder      = { fg = P.grey4, bg = P.bg },
 	Folded           = { fg = P.grey4 },
 	FoldColumn       = { bg = P.bg, fg = P.subtext4 },
 
@@ -51,6 +51,7 @@ return {
 	NonText          = { fg = P.subtext4 },
 	Normal           = { fg = P.fg, bg = Transparency or P.bg },
 	NormalNC         = { fg = P.fg, bg = Transparency or P.bg_dark },
+  -- NormalFloat      = { fg = P.fg, bg = P.bg },
 	NormalFloat      = { fg = P.fg, bg = Transparency or P.bg },
 
 	Pmenu            = { fg = P.fg, bg = Transparency or P.bg },

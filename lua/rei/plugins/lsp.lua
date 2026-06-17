@@ -54,4 +54,7 @@ return {
     LspReferenceText            = { fg = P.purple, underline = true },
     LspReferenceRead            = { fg = P.purple, underline = true },
     LspSignatureActiveParameter = { fg = P.yellow, bold = true },
+
+    -- 
+    HoverBorder = { fg = P.fg, bg = P.bg }
 }

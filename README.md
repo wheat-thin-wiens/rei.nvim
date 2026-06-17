@@ -142,6 +142,16 @@ Borderless:
 ![telescope_borderless](assets/telescope_borderless.png)
 
 
+# Tips & Tricks
+
+If you enabled transparency, enabling borders for floating windows will help provide more visual clarity.
+Here are some examples:
+
+### vim.lsp.buf.hover
+```lua
+vim.keymap.set("n", "K", function() vim.lsp.buf.hover { border = "single" } end, {})
+```
+
 # Extras
 
 Included you will also find themes for the following programs:
