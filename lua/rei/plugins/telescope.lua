@@ -4,6 +4,9 @@ M.default = {
   TelescopeNormal        = { link = "Normal" },
   TelescopeBorder        = { fg = P.white, bg = P.bg },
 
+  TelescopeMatching      = { fg = P.blue },
+  TelescopeSelection     = { fg = P.blue, bg = P.dark_blue },
+
   TelescopePromptNormal  = { bg = Transparency or P.bg_dark },
   TelescopePromptTitle   = { fg = P.purple },
   TelescopePromptBorder  = { fg = P.grey4, bg = Transparency or P.bg_dark },
@@ -22,6 +25,9 @@ M.default = {
 M.borderless =  {
   TelescopeNormal        = { fg = P.fg, bg = P.bg },
   TelescopeBorder        = { fg = P.white, bg = "None" },
+
+  TelescopeMatching      = { fg = P.blue },
+  TelescopeSelection     = { fg = P.blue, bg = P.dark_blue },
 
   TelescopePromptNormal  = { bg = P.grey0 },
   TelescopePromptTitle   = { fg = P.purple, bg = P.dark_purple },
